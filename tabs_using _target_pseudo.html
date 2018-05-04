@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Content tabs using :target pseudo</title>
+    <style>
+        a {
+          text-decoration: none;
+          background: #7c8605;
+          padding: 5px;
+          font-size: 14px;
+          color: #fff;
+        }
+        .center {
+          text-align: center;
+        }
+        .target-1, 
+        .target-2, 
+        .target-3 {
+          font-size:18px;
+          display: none;
+          border: solid 1px #e4e1e1;
+          font-size: 14px;
+          padding: 20px;
+          text-align: center;
+        }
+        .target-1:target, 
+        .target-2:target, 
+        .target-3:target {
+          display: block;
+        }
+    </style>
+	</head>
+  <body>
+    
+    <div class="content">
+        <div class="center">
+            <a href="#element-target">Target 1</a>
+            <a href="#element-target-2">Target 2</a>
+            <a href="#element-target-3">Target 3</a>
+        </div>
+        <p class="target-1" id="element-target">Target is 1 Set</p>
+        <p class="target-2" id="element-target-2">Target is 2 Set</p>
+        <p class="target-2" id="element-target-3">Target is 3 Set</p>
+  </div>
+  </body>
+</html
